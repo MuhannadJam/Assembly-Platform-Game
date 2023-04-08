@@ -32,7 +32,7 @@
 # - no, https://github.com/MuhannadJam/Assembly-Platform-Game
 #
 # Any additional information that the TA needs to know:
-# - (write here, if any)
+# - Pressing q terminates the program
 #
 #####################################################################
 
@@ -956,10 +956,318 @@ skip_oc:
 	sw $t1, 0($sp)
 	jr $ra 				# Return to callee
 
+# These functions are to draw letters on screen
+a:
+	sw $t3, 4($t2)		
+	sw $t3, 8($t2)
+	sw $t3, 12($t2)
+	sw $t3, 256($t2)
+	sw $t3, 272($t2)
+	sw $t3, 512($t2)
+	sw $t3, 528($t2)
+	sw $t3, 768($t2)
+	sw $t3, 772($t2)
+	sw $t3, 776($t2)
+	sw $t3, 780($t2)
+	sw $t3, 784($t2)
+	sw $t3, 1024($t2)
+	sw $t3, 1040($t2)
+	sw $t3, 1280($t2)
+	sw $t3, 1296($t2)
+	sw $t3, 1536($t2)
+	sw $t3, 1552($t2)
+	addi $t2, $t2, 24
+	jr $ra
+
+c:
+	sw $t3, 4($t2)		
+	sw $t3, 8($t2)
+	sw $t3, 12($t2)
+	sw $t3, 16($t2)
+	sw $t3, 256($t2)
+	sw $t3, 512($t2)
+	sw $t3, 768($t2)
+	sw $t3, 1024($t2)
+	sw $t3, 1280($t2)
+	sw $t3, 1540($t2)
+	sw $t3, 1544($t2)
+	sw $t3, 1548($t2)
+	sw $t3, 1552($t2)
+	addi $t2, $t2, 24
+	jr $ra
+	
+e:
+	sw $t3, 0($t2)		
+	sw $t3, 4($t2)
+	sw $t3, 8($t2)
+	sw $t3, 12($t2)
+	sw $t3, 256($t2)
+	sw $t3, 512($t2)
+	sw $t3, 768($t2)
+	sw $t3, 772($t2)
+	sw $t3, 776($t2)
+	sw $t3, 780($t2)
+	sw $t3, 1024($t2)
+	sw $t3, 1280($t2)
+	sw $t3, 1536($t2)
+	sw $t3, 1540($t2)
+	sw $t3, 1544($t2)
+	sw $t3, 1548($t2)
+	addi $t2, $t2, 20
+	jr $ra
+	
+g:
+	sw $t3, 4($t2)		
+	sw $t3, 8($t2)
+	sw $t3, 12($t2)
+	sw $t3, 16($t2)
+	sw $t3, 256($t2)
+	sw $t3, 512($t2)
+	sw $t3, 768($t2)
+	sw $t3, 1024($t2)
+	sw $t3, 1036($t2)
+	sw $t3, 1040($t2)
+	sw $t3, 1280($t2)
+	sw $t3, 1296($t2)
+	sw $t3, 1540($t2)
+	sw $t3, 1544($t2)
+	sw $t3, 1548($t2)
+	sw $t3, 1552($t2)
+	addi $t2, $t2, 24
+	jr $ra
+	
+m:
+	sw $t3, 4($t2)		
+	sw $t3, 8($t2)
+	sw $t3, 16($t2)
+	sw $t3, 20($t2)
+	sw $t3, 256($t2)
+	sw $t3, 268($t2)
+	sw $t3, 280($t2)
+	sw $t3, 512($t2)
+	sw $t3, 524($t2)
+	sw $t3, 536($t2)
+	sw $t3, 768($t2)
+	sw $t3, 780($t2)
+	sw $t3, 792($t2)
+	sw $t3, 1024($t2)
+	sw $t3, 1036($t2)
+	sw $t3, 1048($t2)
+	sw $t3, 1280($t2)
+	sw $t3, 1304($t2)
+	sw $t3, 1536($t2)
+	sw $t3, 1560($t2)
+	addi $t2, $t2, 32
+	jr $ra
+	
+n:	sw $t3, 4($t2)
+	sw $t3, 8($t2)
+	sw $t3, 12($t2)
+	sw $t3, 16($t2)
+	sw $t3, 256($t2)
+	sw $t3, 276($t2)
+	sw $t3, 512($t2)
+	sw $t3, 532($t2)
+	sw $t3, 768($t2)
+	sw $t3, 788($t2)
+	sw $t3, 1024($t2)
+	sw $t3, 1044($t2)
+	sw $t3, 1280($t2)
+	sw $t3, 1300($t2)
+	sw $t3, 1536($t2)
+	sw $t3, 1556($t2)
+	addi $t2, $t2, 28
+	jr $ra
+	jr $ra
+
+o:
+	sw $t3, 4($t2)		
+	sw $t3, 8($t2)
+	sw $t3, 12($t2)
+	sw $t3, 16($t2)
+	sw $t3, 256($t2)
+	sw $t3, 276($t2)
+	sw $t3, 512($t2)
+	sw $t3, 532($t2)
+	sw $t3, 768($t2)
+	sw $t3, 788($t2)
+	sw $t3, 1024($t2)
+	sw $t3, 1044($t2)
+	sw $t3, 1280($t2)
+	sw $t3, 1300($t2)
+	sw $t3, 1540($t2)
+	sw $t3, 1544($t2)
+	sw $t3, 1548($t2)
+	sw $t3, 1552($t2)
+	addi $t2, $t2, 28
+	jr $ra
+
+r:
+	sw $t3, 0($t2)		
+	sw $t3, 4($t2)
+	sw $t3, 8($t2)
+	sw $t3, 12($t2)
+	sw $t3, 256($t2)
+	sw $t3, 272($t2)
+	sw $t3, 512($t2)
+	sw $t3, 528($t2)
+	sw $t3, 768($t2)
+	sw $t3, 772($t2)
+	sw $t3, 776($t2)
+	sw $t3, 780($t2)
+	sw $t3, 1024($t2)
+	sw $t3, 1032($t2)
+	sw $t3, 1280($t2)
+	sw $t3, 1292($t2)
+	sw $t3, 1536($t2)
+	sw $t3, 1552($t2)
+	addi $t2, $t2, 24
+	jr $ra
+
+s:	sw $t3, 0($t2)		
+	sw $t3, 4($t2)
+	sw $t3, 8($t2)
+	sw $t3, 12($t2)
+	sw $t3, 16($t2)		
+	sw $t3, 256($t2)
+	sw $t3, 512($t2)
+	sw $t3, 768($t2)
+	sw $t3, 772($t2)
+	sw $t3, 776($t2)
+	sw $t3, 780($t2)
+	sw $t3, 784($t2)
+	sw $t3, 1040($t2)
+	sw $t3, 1296($t2)
+	sw $t3, 1536($t2)
+	sw $t3, 1540($t2)
+	sw $t3, 1544($t2)
+	sw $t3, 1548($t2)
+	sw $t3, 1552($t2)
+	addi $t2, $t2, 24
+	jr $ra
+	
+t:	sw $t3, 0($t2)		
+	sw $t3, 4($t2)
+	sw $t3, 8($t2)
+	sw $t3, 12($t2)
+	sw $t3, 16($t2)
+	sw $t3, 264($t2)
+	sw $t3, 520($t2)
+	sw $t3, 776($t2)
+	sw $t3, 1032($t2)
+	sw $t3, 1288($t2)
+	sw $t3, 1544($t2)
+	addi $t2, $t2, 24
+	jr $ra
+	
+u:	sw $t3, 0($t2)
+	sw $t3, 20($t2)
+	sw $t3, 256($t2)
+	sw $t3, 276($t2)
+	sw $t3, 512($t2)
+	sw $t3, 532($t2)
+	sw $t3, 768($t2)
+	sw $t3, 788($t2)
+	sw $t3, 1024($t2)
+	sw $t3, 1044($t2)
+	sw $t3, 1280($t2)
+	sw $t3, 1300($t2)
+	sw $t3, 1540($t2)
+	sw $t3, 1544($t2)
+	sw $t3, 1548($t2)
+	sw $t3, 1552($t2)
+	addi $t2, $t2, 28
+	jr $ra
+			
+v:
+	sw $t3, 0($t2)		
+	sw $t3, 16($t2)
+	sw $t3, 256($t2)
+	sw $t3, 272($t2)
+	sw $t3, 512($t2)
+	sw $t3, 528($t2)
+	sw $t3, 768($t2)
+	sw $t3, 784($t2)
+	sw $t3, 1024($t2)
+	sw $t3, 1040($t2)
+	sw $t3, 1284($t2)
+	sw $t3, 1292($t2)
+	sw $t3, 1544($t2)
+	addi $t2, $t2, 24
+	jr $ra
+
+w:	sw $t3, 0($t2)		
+	sw $t3, 24($t2)
+	sw $t3, 256($t2)
+	sw $t3, 280($t2)
+	sw $t3, 512($t2)
+	sw $t3, 524($t2)
+	sw $t3, 536($t2)
+	sw $t3, 768($t2)
+	sw $t3, 780($t2)
+	sw $t3, 792($t2)
+	sw $t3, 1024($t2)
+	sw $t3, 1036($t2)
+	sw $t3, 1048($t2)
+	sw $t3, 1280($t2)
+	sw $t3, 1292($t2)
+	sw $t3, 1304($t2)
+	sw $t3, 1540($t2)
+	sw $t3, 1544($t2)
+	sw $t3, 1552($t2)
+	sw $t3, 1556($t2)
+	addi $t2, $t2, 32
+	jr $ra
+	
+y:	sw $t3, 0($t2)
+	sw $t3, 16($t2)
+	sw $t3, 256($t2)
+	sw $t3, 272($t2)
+	sw $t3, 512($t2)
+	sw $t3, 528($t2)
+	sw $t3, 768($t2)
+	sw $t3, 772($t2)
+	sw $t3, 776($t2)
+	sw $t3, 780($t2)
+	sw $t3, 784($t2)
+	sw $t3, 1040($t2)
+	sw $t3, 1280($t2)
+	sw $t3, 1296($t2)
+	sw $t3, 1536($t2)
+	sw $t3, 1540($t2)
+	sw $t3, 1544($t2)
+	sw $t3, 1548($t2)
+	sw $t3, 1552($t2)
+	addi $t2, $t2, 24
+	jr $ra
+
+exclamation:
+	sw $t3, 0($t2)
+	sw $t3, 256($t2)
+	sw $t3, 512($t2)
+	sw $t3, 768($t2)
+	sw $t3, 1024($t2)
+	sw $t3, 1536($t2)
+	addi, $t2, $t2, 8
+	jr $ra
+	
+	
 game_over:
 	jal clear_screen
 	li $t1, 0
 	sw $t1, gameRunning
+	li $t0, BASE_ADDRESS
+	addi $t2, $t0, 15380
+	lw $t3, white
+	jal g			# Writing Game
+	jal a
+	jal m	
+	jal e
+	addi $t2, $t2, 16	# Space
+	jal o			# writing Over
+	jal v
+	jal e
+	jal r
 go_loop:	
 	jal keyboard
 	li $v0, 32
@@ -967,10 +1275,33 @@ go_loop:
 	syscall
 	j go_loop
 	
+	
 game_won:
 	jal clear_screen
 	li $t1, 0
 	sw $t1, gameRunning
+	li $t0, BASE_ADDRESS
+	lw $t3, white
+	addi $t2, $t0, 14108
+	jal c			# Writing Congrats
+	jal o
+	jal n
+	jal g
+	jal r
+	jal a
+	jal t
+	jal s
+	addi $t2, $t0, 16412	# Next line
+	jal y			# Writing You
+	jal o
+	jal u
+	addi $t2, $t2, 16	# Space
+	jal w			# Writing Won
+	jal o
+	jal n	
+	addi $t2, $t2, 4	# Small space
+	jal exclamation		# Writing !!
+	jal exclamation
 gw_loop:	
 	jal keyboard
 	li $v0, 32
