@@ -26,13 +26,13 @@
 # 6. Double Jump
 #
 # Link to video demonstration for final submission:
-# - (insert YouTube / MyMedia / other URL here). Make sure we can view it!
+# - https://youtu.be/fKvuaO-IAdo
 #
 # Are you OK with us sharing the video with people outside course staff?
-# - no, https://github.com/MuhannadJam/Assembly-Platform-Game
+# - yes, https://github.com/MuhannadJam/Assembly-Platform-Game
 #
 # Any additional information that the TA needs to know:
-# - Pressing q terminates the program
+# - (write here, if any)
 #
 #####################################################################
 
